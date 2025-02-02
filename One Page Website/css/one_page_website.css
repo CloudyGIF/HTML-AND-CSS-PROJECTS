@@ -1,0 +1,50 @@
+body {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif;
+    }
+    
+    div {
+    text-align: center;
+    font: Verdana;
+    }
+    h3 {
+   color: rgb(3, 46, 3);
+    }
+    
+    div.gallery {
+    margin: 10px;
+    }
+    
+    div.gallery img {
+    width: 80%;
+    height: auto;
+    }
+
+    nav {
+        text-align: center;
+        scroll-behavior: smooth;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    form input{
+        border-radius: 5px;
+        padding: 5px;
+        margin: 10px;
+        width: 200px;
+        border: 2px solid black;
+    }
+
+    input[type="submit"]:hover{
+        background-color: rgb(11, 88, 11);
+        color: white;
+    }

@@ -2,44 +2,21 @@
 <html lang="en">
 	<head>
 		<title>Scottish Highlands</title>
-		<meta charset ="utf-8">
+		<meta charset ="UTF-8">
+		<link href="css/one_page_website.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-	<style>
-	 body {
-	 background-image: url('images/background.jpg');
-	 background-repeat: no-repeat;
-	 background-attachment: fixed;
-	 background-size: cover;
-	 }
-	 
-	 div {
-	 text-align: center;
-	 font: Verdana;
-	 }
-	 h3 {
-	color: white;
-	 }
-	 
-	 div.gallery {
-	 margin: 10px;
-	 }
-	 
-	 div.gallery img {
-	 width: 100%;
-	 height: auto;
-	 }
-	 
-	</style>	
+	
 		<main>
 			<div>
 				<header> 
-			<h1><font color="#EDEADE" size:"7">Scottish Highlands</font></h1>
-			<nav style="text-align: center;">
-			<a href = "#about">About</a>|
-			<a href = "#gallery">Gallery</a>|
-			<a href = "#video">Video</a>|
-			<a href = "#contactus">Contact Us</a>
+			<h1>Scottish Highlands</h1>
+			<nav>
+			<a aria-label=" Go to About Us section" href = "#about">About</a>|
+			<a aria-label="Go to Gallery" href = "#gallery">Gallery</a>|
+			<a aria-label="Go to Video" href = "#video">Video</a>|
+			<a aria-label="Go to Contact Us form" href = "#contactus">Contact Us</a>
 			</nav>
 				</header>
 			</div>
@@ -51,16 +28,16 @@
 				</blockquote>
 				<p>This is a website dedicated to the great Scottish Highlands, for any further information please visit <a href="https://www.visitscotland.com/places-to-go/highlands" target="_blank">Visit Scotland</a></p>	
 			</div>
-			<div id="gallery">
+			<div>
 				<h3>Gallery</h3>
 					<div class="gallery">
-						<img src="images/cow.jpg" alt="highlands cow" width="500" height="400">
+						<img src="images/cow.jpg" alt="highlands cow with a mountain in the background">
 					</div>
 					<div class="gallery">
-						<img src="images/image2.jpg" alt="highlands cow" width="500" height="400">
+						<img src="images/image2.jpg" alt="John o'Groats road sign" >
 					</div>
 					<div class="gallery">
-						<img src="images/image3.jpg" alt="highlands cow" width="500" height="400">
+						<img src="images/image3.jpg" alt="Highlands mountains">
 					</div>
 			</div>
 			<div id="video">
@@ -72,18 +49,18 @@
 			<div id="contactus">
 			<h3>Please Reach Out To Us</h3>
 			<form>
-					<input type="text" placeholder="First Name" style="width:200px;"><br>
-					<input type="text" placeholder="Last Name" style="width:200px;"><br>
-					<input type="email" placeholder="Email" style="width:200px;"><br>
-					<input type="tel" placeholder="Phone Number" style="width:200px;"><br>
+					<input type="text" placeholder="First Name"><br>
+					<input type="text" placeholder="Last Name"><br>
+					<input type="email" placeholder="Email"><br>
+					<input type="tel" placeholder="Phone Number"><br>
 					<label for="option"><h3>Please Select Your Inquiry</h3></label><br>
-					<select name="options" id="options" multiple style="width:200px;">
+					<select name="options" id="options" multiple >
 						<option value="hicking">Hicking</option>
 						<option value="lochs">Lochs Tour</option>
 						<option value="worldheritage">World Heritage Site</option>
 						<option value="fortwilliam">Fort William</option>
 					</select><br><br>
-					<input type="submit" value="Submit">
+					<input aria-label="Submit form" type="submit" value="Submit">
 				</form>
 			</div>
 			<footer>
