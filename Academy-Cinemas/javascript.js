@@ -35,6 +35,26 @@ function buyTickets(){
     displaySelectedMovieOptions();
 }
 
+//adds or removes the nav-shrink class to the navbar if
+//the page is scrolled more than 50 px
+$(document).on("scroll", function () {
+    if($(document).scrollTop() > 50) {
+        $("nav").addClass("navbar-shrink");
+    } else {
+        $("nav").removeClass("navbar-shrink");
+        $("div.navbar-collapse").css("margin-top","14px");
+    }
+});
+
+
+//close mobile menu when a navigation link is clicked
+$(document).ready(function () {
+    //if the element contains nav-link class but not dropdown-toggle or dropdown-item
+    $(".navbar-nav").on('click','.nav-link:not(".dropdown-toggle"), .dropdown-item', function (){
+        $(".navbar-collapse").collapse('hide');
+    });
+});
+
 
 
 //event listeners for the 2 select options

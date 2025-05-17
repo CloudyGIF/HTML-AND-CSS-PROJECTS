@@ -45,6 +45,15 @@ body{
 
 }
 
+.navbar-shrink{
+    height: 80px;
+    transition: 0.5s ease;
+}
+
+.navbar-collape{
+    transition: margin-top 0.5s ease;
+}
+
 .nav-link{
     color: var(--main-color-accent);
     font-family: var(--main-font-family);
